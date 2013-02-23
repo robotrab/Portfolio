@@ -5,6 +5,17 @@
 @btn-accent: #9FDAAE;
 @content-width: 860px;
 
+.gradient4f (@p1, @c1, @p2, @c2, @p3, @c3, @p4, @c4) {
+	background: @c1;
+	background: -moz-linear-gradient(top, @c1 @p1, @c2 @p2, @c3 @p3, @c4 @p4);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(@p1, @c1), color-stop(@p2, @c2), color-stop(@p3, @c3), color-stop(@p4, @c4));
+	background: -webkit-linear-gradient(top, @c1 @p1, @c2 @p2, @c3 @p3, @c4 @p4);
+	background: -o-linear-gradient(top, @c1 @p1, @c2 @p2, @c3 @p3, @c4 @p4);
+	background: -ms-linear-gradient(top, @c1 @p1, @c2 @p2, @c3 @p3, @c4 @p4);
+	background: linear-gradient(to bottom, @c1 @p1, @c2 @p2, @c3 @p3, @c4 @p4);
+}
+
+
 * {
 	font-family: sans-serif;
 	color: @btn-color;
@@ -50,24 +61,25 @@ header {
 	.column {
 		position: relative;
 		float: left;
+		text-align: center;
 	}
 }
 
 .center {
 	width: 100%;
 	text-align: center;
+	height: 400px;
+	background-color: @body-color;
+	border-radius: 4px;
 }
 
 .left {
-	width: 70px;
 	right: 70px;
 	margin-left: -100%;
 }
 
 .right {
-	width: 70px;
 	margin-right: -70px;
-	text-align: right;
 }
 
 footer {
@@ -75,19 +87,16 @@ footer {
 	text-align: center;
 }
 
-// .panel {
-// 	background-color: @btn-color;
+.arrow {
+	font-size: 2em;
+}
 
-// }
-
-// nav {
-// 	background-color: @btn-accent;
-// }
-
-// footer nav {
-// 	background-color: @header-accent;
-// }
-
-// header .panel {
-// 		background-color: @header-color;
-// }
+.nav {
+	width: 70px;
+	background-color: @header-color;
+	border-radius: 4px;
+	.gradient4f(0%, @header-color, 23%, @header-color, 86%, @header-accent, 100%, @header-accent);
+	.bottom {
+		margin: auto;
+	}
+}
