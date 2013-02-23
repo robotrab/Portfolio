@@ -1,0 +1,9 @@
+* {
+  font-family: sans-serif;
+  color: #66c47e;
+}
+body {
+  background: white url(../img/pw_maze_white.png);
+  margin: 0;
+  padding: 0;
+}
