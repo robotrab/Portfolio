@@ -3,6 +3,7 @@
 @header-accent: #2F2F2F;
 @btn-color: #66C47E;
 @btn-accent: #9FDAAE;
+@content-width: 860px;
 
 * {
 	font-family: sans-serif;
@@ -14,6 +15,64 @@ body {
 	//background: white url(../img/escheresque_ste.png);
 	margin: 0;
 	padding: 0;
+	min-width: 210px;
+}
+
+.wrapper {
+	width: 100%;
+	margin: auto;
+	h1 {
+		padding-right: 40px;
+	}
+}
+
+header {
+	background-color: rgba(125,125,125,.85);
+	height: 150px;
+	width: 100%;
+	margin-top: 100px;
+	border-top: 1px solid @header-accent;
+	border-bottom: 1px solid @header-accent;
+	div.wrapper {
+		padding: 11px 0;
+		div.panel {
+			margin-top: 100px;
+			h1 {
+				text-align: right;
+			}
+		}
+	}
+}
+
+.content {
+	padding-left: 70px;
+	padding-right: 70px;
+	.column {
+		position: relative;
+		float: left;
+	}
+}
+
+.center {
+	width: 100%;
+	text-align: center;
+}
+
+.left {
+	width: 70px;
+	right: 70px;
+	margin-left: -100%;
+}
+
+.right {
+	width: 70px;
+	margin-right: -70px;
+	text-align: right;
+}
+
+footer {
+	clear: both;
+	text-align: center;
 }
 
 // .panel {
