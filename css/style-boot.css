@@ -51,12 +51,12 @@ body {
   	height: 480px;
 }
 
-/*.carousel-caption {
+.carousel-caption {
   	background-color: transparent;
   	position: static;
-  	max-width: 550px;
+  	max-width: 640px;
   	padding: 0 20px;
-  	margin-top: 200px;
+  	margin-top: 300px;
 }
 .carousel-caption h1,
 .carousel-caption .lead {
@@ -67,7 +67,7 @@ body {
 }
 .carousel-caption .btn {
   	margin-top: 10px;
-}*/
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -99,11 +99,11 @@ body {
   	.carousel img {
     	height: 480px;
   	}
-  	/*.carousel-caption {
+  	.carousel-caption {
     	width: 65%;
     	padding: 0 70px;
-    	margin-top: 100px;
-  	}*/
+    	margin-top: 300px;
+  	}
   	.carousel-caption h1 {
     	font-size: 30px;
   	}
@@ -111,4 +111,25 @@ body {
   	.carousel-caption .btn {
     	font-size: 18px;
   	}
+}
+
+
+/* Nav */
+nav {
+  position: fixed;
+}
+
+#left {
+  left: 0%;
+  top: 50%;
+}
+
+#right {
+  right: 0%;
+  top: 50%;
+}
+
+#bottom {
+  left: 50%;
+  bottom: 0%;
 }
