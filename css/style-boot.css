@@ -156,6 +156,12 @@ nav {
   bottom: 0%;
 }
 
+#top {
+  left: 50%;
+  right: 50%;
+  top: 0%;
+}
+
 .arrow-n,
 .arrow-e,
 .arrow-s,
