@@ -6,6 +6,19 @@
   text-align: right;
 }
 
+.connect {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.img-left {
+  text-align: right;
+}
+
+.img-right {
+  text-align: left;
+}
+
 /* GLOBAL STYLES
     -------------------------------------------------- */
     /* Padding below the footer and lighter body text */
