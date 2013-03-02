@@ -1,9 +1,10 @@
-/*.carousel-img {
-	width: 640px;
-	max-width: 640px;
-  	height: 480px;
-  	max-height: 480px;
-}*/
+.hero-unit {
+  margin-top: 20px;
+}
+
+.hero-unit h1 {
+  text-align: right;
+}
 
 /* GLOBAL STYLES
     -------------------------------------------------- */
@@ -12,7 +13,6 @@
 body {
 	padding-bottom: 40px;
   background-color: #5a5a5a;
-
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -27,8 +27,7 @@ body {
 
 .carousel .container {
     position: relative;
-    z-index: 9;
-    
+    z-index: 9;  
 }
 
 .carousel-control {
@@ -57,17 +56,15 @@ body {
   	position: static;
   	max-width: 640px;
   	padding: 0 20px;
-  	margin-top: 300px;
+  	margin-top: 350px;
 }
 .carousel-caption h1,
 .carousel-caption .lead {
   	margin: 0;
-  	line-height: 1.25;
+  	line-height: 1.20;
   	color: #fff;
   	text-shadow: 0 1px 1px rgba(0,0,0,.4);
-}
-.carousel-caption .btn {
-  	margin-top: 10px;
+    font-size: 1.5em;
 }
 
 /* RESPONSIVE CSS
@@ -134,16 +131,6 @@ nav {
   left: 50%;
   right: 50%;
   bottom: 0%;
-}
-
-.rotate {
--webkit-transform: rotate(90deg); /* Safari */
--moz-transform: rotate(90deg); /* Firefox */
--ms-transform: rotate(90deg); /* IE */
--o-transform: rotate(90deg); /* Opera */
-/* Internet Explorer */
-/*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
-
 }
 
 .arrow-n,
