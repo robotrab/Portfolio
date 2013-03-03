@@ -11,10 +11,10 @@
         <link href="css/lib/font-awesome.min.css" rel="stylesheet">
         <link href="css/carousel-extras.css" rel="stylesheet">
         <link href="css/media-queries.css" rel="stylesheet">
-        <link href="css/style-boot.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
+        <div id="container" class="container">
         
         <div id="card" class="card show-front" onclick="flip(event)">
             <div id="front" class="front face">
@@ -146,6 +146,19 @@
                   </div>
                 </div>
             </div><!-- Right -->
+
+
+            <div id="bottom" class="bottom face">
+                <div class="row connect">
+                  <div class="span6">
+                    <h2>TEST</h2>
+                    <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  </div>
+                  <div class="span6">
+                    <img src="img/connect/cats2.jpg" class="img-polaroid" />
+                  </div>
+                </div>
+            </div><!-- Right -->
             
 
         </div> <!-- Container -->
@@ -154,5 +167,25 @@
         <script src="js/lib/jquery-1.9.1.min.js"></script>
         <script src="js/lib/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+function flip (event)
+{
+    var element = event.currentTarget;
+    
+    var targetClassName = element.className;
+    
+    
+    if(targetClassName == 'card show-front')
+        element.className = 'card show-left';
+    else if(targetClassName == 'card show-left')
+        element.className = 'card show-right';
+    else if(targetClassName == 'card show-right')
+        element.className = 'card show-bottom';
+    else if(targetClassName == 'card show-bottom')
+        element.className = 'card show-front';
+    
+}
+            
+</script>
     </body>
 </html>
