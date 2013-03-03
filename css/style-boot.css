@@ -16,6 +16,12 @@ a, a:hover {
   text-decoration: none;
 }
 
+a {
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+
 a:hover {
   color: #E36B23;
 }
@@ -53,7 +59,8 @@ a:hover {
 
 body {
 	padding-bottom: 40px;
-  background-color: #5a5a5a;
+  /*background-color: #5a5a5a;*/
+  background: url('../img/bg.gif');
 }
 
 /* CUSTOMIZE THE CAROUSEL
