@@ -1,58 +1,160 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/style.css">
-
-        <script src="js/lib/modernizr-2.6.2.min.js"></script>
+        <title>Awesome Sauce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Professional">
+        <meta name="author" content="Rob Brown">
+        <link href="css/lib/bootstrap.css" rel="stylesheet">
+        <link href="css/lib/bootstrap-responsive.css" rel="stylesheet">
+        <link href="css/lib/font-awesome.min.css" rel="stylesheet">
+        <link href="css/carousel-extras.css" rel="stylesheet">
+        <link href="css/media-queries.css" rel="stylesheet">
+        <link href="css/style-boot.css" rel="stylesheet">
     </head>
     <body>
+        <div class="container">
+            <div id="header">
+                <div class="row">
+                    <div class="span12">
+                        <div class="hero-unit">
+                            <h1>Rob Brown</h1>
+                        </div>
+                    </div> 
+                </div>
 
-        <header>
-            <div class="wrapper">
-                <div class="panel">
-                    <h1>Rob Brown</h1>
+                <nav id="left">
+                  <a class="icon-chevron-left icon-4x tip" href="#portfolio" title="Connect" data-placement="right"></a>
+                </nav>
+
+                <nav id="right">
+                  <a class="icon-chevron-right icon-4x tip" href="#about" title="About" data-placement="left"></a>
+                </nav>
+
+                <nav id="bottom">
+                  <a class="icon-chevron-down icon-4x tip" href="#" title="C.V." data-placement="top"></a>
+                </nav>
+
+            </div> <!-- Header -->
+
+            <div id="home" class="row content">
+                <div class="span12">
+                    <!-- Carousel
+                    ================================================== -->
+                    <div id="myCarousel" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="img/cat1.jpg" alt="" class="carousel-img img-rounded">
+                          <div class="container">
+                            <div class="carousel-caption">
+                              <h1>Program 1</h1>
+                              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="img/cat2.jpg" alt="" class="carousel-img img-rounded">
+                          <div class="container">
+                            <div class="carousel-caption">
+                              <h1>Program 2</h1>
+                              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="img/cat3.jpg" alt="" class="carousel-img img-rounded">
+                          <div class="container">
+                            <div class="carousel-caption">
+                              <h1>Program 3</h1>
+                              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                    </div> <!-- /.carousel -->
+                </div> <!-- Span12 -->
+            </div> <!-- Home Row -->
+            
+            <div id="portfolio" class="panel">
+                <div class="content">
+                    <div class="row connect">
+                      <div class="span6 img-left">
+                        <a href="https://www.facebook.com/rabrown89" title="Facebook"><i class="icon-facebook-sign icon-8x icon-border"></i></a>
+                      </div>
+                      <div class="span6 img-right">
+                        <a href="https://twitter.com/RobotRAB" title="Twitter"><i class="icon-twitter-sign icon-8x icon-border"></i></a>
+                      </div>
+                    </div>
+                    <div class="row connect">
+                      <div class="span6 img-left">
+                        <a href="https://plus.google.com/107011391638026758470/posts" title="Google Plus"><i class="icon-google-plus-sign icon-8x icon-border"></i></a>
+                      </div>
+                      <div class="span6 img-right">
+                        <a href="http://www.linkedin.com/pub/robert-brown/31/8a0/651" title="LinkedIn"><i class="icon-linkedin-sign icon-8x icon-border"></i></a>
+                      </div>
+                    </div>
+                    <div class="row connect">
+                      <div class="span6 img-left">
+                        <a href="https://github.com/robotrab" title="Github"><i class="icon-github-sign icon-8x icon-border"></i></a>
+                      </div>
+                      <div class="span6 img-right">
+                        <a href="#" title="My Blog"><i class="icon-user icon-8x icon-border"></i></a>
+                      </div>
+                    </div>
                 </div>
             </div>
-        </header>
 
-        <br />
-        <div class="content">
-            <div class="center column">
-                <!-- <div class="wrapper"> -->
-                    <!-- <div class="panel"> -->
-                        Portfolio
-                    <!-- </div> -->
-                <!-- </div> -->
+
+            <div id="about" class="panel">
+                <div class="content">
+                    <div class="row connect">
+                      <div class="span6">
+                        <h2>Running</h2>
+                        <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      </div>
+                      <div class="span6">
+                        <img src="img/connect/cats2.jpg" class="img-polaroid" />
+                      </div>
+                    </div>
+                    <div class="row connect">
+                      <div class="span6">
+                        <img src="img/connect/cats3.jpg" class="img-polaroid" />
+                      </div>
+                      <div class="span6">
+                        <h2>Solving Problems</h2>
+                        <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      </div>
+                    </div>
+                    <div class="row connect">
+                      <div class="span6">
+                        <h2>Snowboarding</h2>
+                        <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      </div>
+                      <div class="span6">
+                        <img src="img/connect/cats6.jpg" class="img-polaroid" />
+                      </div>
+                    </div>
+                    <div class="row connect">
+                      <div class="span6">
+                        <img src="img/connect/cats4.jpg" class="img-polaroid" />
+                      </div>
+                      <div class="span6">
+                        <h2>Drumming</h2>
+                        <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="left column nav">
-                <span class="arrow">⇦</span>
-            </div>
 
-            <div class="right column nav">
-                <span class="arrow">⇨</span>
-            </div>
-        </div>
+        </div> <!-- Container -->
 
-        
-        <footer>
-            <br />
-            <div class="bottom nav">
-                <span class="arrow">⇩</span>
-            </div>
-        </footer>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/lib/jquery-1.9.1.min.js"><\/script>')</script>
-
+        <script src="js/lib/jquery-1.9.1.min.js"></script>
+        <script src="js/lib/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
