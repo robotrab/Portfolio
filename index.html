@@ -15,7 +15,9 @@
     </head>
     <body>
         <div class="container">
-            <div id="header">
+        
+        <div id="card" class="card show-front" onclick="flip(event)">
+            <div id="front" class="front face">
                 <div class="row">
                     <div class="span12">
                         <div class="hero-unit">
@@ -35,119 +37,115 @@
                 <nav id="bottom">
                   <a class="icon-chevron-down icon-4x tip" href="#" title="C.V." data-placement="top"></a>
                 </nav>
+                
 
-            </div> <!-- Header -->
 
-            <div id="home" class="row content">
-                <div class="span12">
-                    <!-- Carousel
-                    ================================================== -->
-                    <div id="myCarousel" class="carousel slide">
-                      <div class="carousel-inner">
-                        <div class="item active">
-                          <img src="img/cat1.jpg" alt="" class="carousel-img img-rounded">
-                          <div class="container">
-                            <div class="carousel-caption">
-                              <h1>Program 1</h1>
-                              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <div class="row content">
+                    <div class="span12">
+                        <!-- Carousel
+                        ================================================== -->
+                        <div id="myCarousel" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="item active">
+                              <img src="img/cat1.jpg" alt="" class="carousel-img img-rounded">
+                              <div class="container">
+                                <div class="carousel-caption">
+                                  <h1>Program 1</h1>
+                                  <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <img src="img/cat2.jpg" alt="" class="carousel-img img-rounded">
+                              <div class="container">
+                                <div class="carousel-caption">
+                                  <h1>Program 2</h1>
+                                  <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <img src="img/cat3.jpg" alt="" class="carousel-img img-rounded">
+                              <div class="container">
+                                <div class="carousel-caption">
+                                  <h1>Program 3</h1>
+                                  <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                </div>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="item">
-                          <img src="img/cat2.jpg" alt="" class="carousel-img img-rounded">
-                          <div class="container">
-                            <div class="carousel-caption">
-                              <h1>Program 2</h1>
-                              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <img src="img/cat3.jpg" alt="" class="carousel-img img-rounded">
-                          <div class="container">
-                            <div class="carousel-caption">
-                              <h1>Program 3</h1>
-                              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                    </div> <!-- /.carousel -->
-                </div> <!-- Span12 -->
-            </div> <!-- Home Row -->
-            
-            <div id="portfolio" class="panel">
-                <div class="content">
-                    <div class="row connect">
-                      <div class="span6 img-left">
-                        <a href="https://www.facebook.com/rabrown89" title="Facebook"><i class="icon-facebook-sign icon-8x icon-border"></i></a>
-                      </div>
-                      <div class="span6 img-right">
-                        <a href="https://twitter.com/RobotRAB" title="Twitter"><i class="icon-twitter-sign icon-8x icon-border"></i></a>
-                      </div>
-                    </div>
-                    <div class="row connect">
-                      <div class="span6 img-left">
-                        <a href="https://plus.google.com/107011391638026758470/posts" title="Google Plus"><i class="icon-google-plus-sign icon-8x icon-border"></i></a>
-                      </div>
-                      <div class="span6 img-right">
-                        <a href="http://www.linkedin.com/pub/robert-brown/31/8a0/651" title="LinkedIn"><i class="icon-linkedin-sign icon-8x icon-border"></i></a>
-                      </div>
-                    </div>
-                    <div class="row connect">
-                      <div class="span6 img-left">
-                        <a href="https://github.com/robotrab" title="Github"><i class="icon-github-sign icon-8x icon-border"></i></a>
-                      </div>
-                      <div class="span6 img-right">
-                        <a href="#" title="My Blog"><i class="icon-user icon-8x icon-border"></i></a>
-                      </div>
-                    </div>
+                          <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                          <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                        </div> <!-- /.carousel -->
+                    </div> <!-- Span12 -->
+                </div> <!-- Home Row -->
+            </div> <!-- Front -->
+
+            <div id="left" class="left face">
+                <div class="row connect">
+                  <div class="span6 img-left">
+                    <a href="https://www.facebook.com/rabrown89" title="Facebook"><i class="icon-facebook-sign icon-8x icon-border"></i></a>
+                  </div>
+                  <div class="span6 img-right">
+                    <a href="https://twitter.com/RobotRAB" title="Twitter"><i class="icon-twitter-sign icon-8x icon-border"></i></a>
+                  </div>
                 </div>
-            </div>
-
-
-            <div id="about" class="panel">
-                <div class="content">
-                    <div class="row connect">
-                      <div class="span6">
-                        <h2>Running</h2>
-                        <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      </div>
-                      <div class="span6">
-                        <img src="img/connect/cats2.jpg" class="img-polaroid" />
-                      </div>
-                    </div>
-                    <div class="row connect">
-                      <div class="span6">
-                        <img src="img/connect/cats3.jpg" class="img-polaroid" />
-                      </div>
-                      <div class="span6">
-                        <h2>Solving Problems</h2>
-                        <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      </div>
-                    </div>
-                    <div class="row connect">
-                      <div class="span6">
-                        <h2>Snowboarding</h2>
-                        <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      </div>
-                      <div class="span6">
-                        <img src="img/connect/cats6.jpg" class="img-polaroid" />
-                      </div>
-                    </div>
-                    <div class="row connect">
-                      <div class="span6">
-                        <img src="img/connect/cats4.jpg" class="img-polaroid" />
-                      </div>
-                      <div class="span6">
-                        <h2>Drumming</h2>
-                        <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      </div>
-                    </div>
+                <div class="row connect">
+                  <div class="span6 img-left">
+                    <a href="https://plus.google.com/107011391638026758470/posts" title="Google Plus"><i class="icon-google-plus-sign icon-8x icon-border"></i></a>
+                  </div>
+                  <div class="span6 img-right">
+                    <a href="http://www.linkedin.com/pub/robert-brown/31/8a0/651" title="LinkedIn"><i class="icon-linkedin-sign icon-8x icon-border"></i></a>
+                  </div>
                 </div>
-            </div>
+                <div class="row connect">
+                  <div class="span6 img-left">
+                    <a href="https://github.com/robotrab" title="Github"><i class="icon-github-sign icon-8x icon-border"></i></a>
+                  </div>
+                  <div class="span6 img-right">
+                    <a href="#" title="My Blog"><i class="icon-user icon-8x icon-border"></i></a>
+                  </div>
+                </div>
+            </div><!-- Left -->
+
+            <div id="right" class="right face">
+                <div class="row connect">
+                  <div class="span6">
+                    <h2>Running</h2>
+                    <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  </div>
+                  <div class="span6">
+                    <img src="img/connect/cats2.jpg" class="img-polaroid" />
+                  </div>
+                </div>
+                <div class="row connect">
+                  <div class="span6">
+                    <img src="img/connect/cats3.jpg" class="img-polaroid" />
+                  </div>
+                  <div class="span6">
+                    <h2>Solving Problems</h2>
+                    <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  </div>
+                </div>
+                <div class="row connect">
+                  <div class="span6">
+                    <h2>Snowboarding</h2>
+                    <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  </div>
+                  <div class="span6">
+                    <img src="img/connect/cats6.jpg" class="img-polaroid" />
+                  </div>
+                </div>
+                <div class="row connect">
+                  <div class="span6">
+                    <img src="img/connect/cats4.jpg" class="img-polaroid" />
+                  </div>
+                  <div class="span6">
+                    <h2>Drumming</h2>
+                    <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  </div>
+                </div>
+            </div><!-- Right -->
             
 
         </div> <!-- Container -->
