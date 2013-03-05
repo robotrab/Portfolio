@@ -7,7 +7,7 @@
         <meta name="description" content="Professional">
         <meta name="author" content="Rob Brown">
         <link href="css/lib/bootstrap.css" rel="stylesheet">
-        <link href="css/lib/bootstrap-responsive.css" rel="stylesheet">
+        <!-- <link href="css/lib/bootstrap-responsive.css" rel="stylesheet"> -->
         <link href="css/lib/font-awesome.min.css" rel="stylesheet">
         <link href="css/carousel-extras.css" rel="stylesheet">
         <link href="css/media-queries.css" rel="stylesheet">
@@ -15,33 +15,22 @@
     </head>
     <body>
         <div id="container" class="container">
-        
-        <div id="card" class="card show-front" onclick="flip(event)">
-            <div id="front" class="front face">
-                <div class="row">
+        <div class="row">
                     <div class="span12">
                         <div class="hero-unit">
                             <h1>Rob Brown</h1>
                         </div>
                     </div> 
                 </div>
-
-                <nav id="left">
-                  <a class="icon-chevron-left icon-4x tip" href="#portfolio" title="Connect" data-placement="right"></a>
-                </nav>
-
-                <nav id="right">
-                  <a class="icon-chevron-right icon-4x tip" href="#about" title="About" data-placement="left"></a>
-                </nav>
-
-                <nav id="bottom">
-                  <a class="icon-chevron-down icon-4x tip" href="#" title="C.V." data-placement="top"></a>
-                </nav>
+        <div id="card" class="card show-front" onclick="flip(event)">
+            <div id="front" class="front face">
                 
-
-
-                <div class="row content">
-                    <div class="span12">
+              <div class="row content">
+                <div class="span1" id="left">
+                  <a class="icon-chevron-left icon-4x tip" href="#portfolio" title="Connect" data-placement="right"></a>
+                </div> 
+                
+                    <div class="span10">
                         <!-- Carousel
                         ================================================== -->
                         <div id="myCarousel" class="carousel slide">
@@ -78,10 +67,17 @@
                           <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
                         </div> <!-- /.carousel -->
                     </div> <!-- Span12 -->
+                  <div class="span1" id="right">
+                    <a class="icon-chevron-right icon-4x tip" href="#about" title="About" data-placement="left"></a>
+                  </div> 
+
                 </div> <!-- Home Row -->
+                <div class="span12" id="bottom">
+                  <a class="icon-chevron-down icon-4x tip" href="#" title="C.V." data-placement="top"></a>
+                </div>
             </div> <!-- Front -->
 
-            <div id="left" class="left face">
+            <div id="left" class="left1 face">
                 <div class="row connect">
                   <div class="span6 img-left">
                     <a href="https://www.facebook.com/rabrown89" title="Facebook"><i class="icon-facebook-sign icon-8x icon-border"></i></a>
@@ -89,16 +85,26 @@
                   <div class="span6 img-right">
                     <a href="https://twitter.com/RobotRAB" title="Twitter"><i class="icon-twitter-sign icon-8x icon-border"></i></a>
                   </div>
-                </div>
-                <div class="row connect">
-                  <div class="span6 img-left">
+                <!-- </div> -->
+
+                <div class="span1" id="left">
+                  <a class="icon-chevron-left icon-4x tip" href="#portfolio" title="Connect" data-placement="right"></a>
+                </div> 
+
+                <!-- <div class="row connect"> -->
+                  <div class="span5 img-left">
                     <a href="https://plus.google.com/107011391638026758470/posts" title="Google Plus"><i class="icon-google-plus-sign icon-8x icon-border"></i></a>
                   </div>
-                  <div class="span6 img-right">
+                  <div class="span5 img-right">
                     <a href="http://www.linkedin.com/pub/robert-brown/31/8a0/651" title="LinkedIn"><i class="icon-linkedin-sign icon-8x icon-border"></i></a>
                   </div>
-                </div>
-                <div class="row connect">
+                <!-- </div> -->
+
+                <div class="span1" id="right">
+                    <a class="icon-chevron-right icon-4x tip" href="#about" title="About" data-placement="left"></a>
+                  </div> 
+
+                <!-- <div class="row connect"> -->
                   <div class="span6 img-left">
                     <a href="https://github.com/robotrab" title="Github"><i class="icon-github-sign icon-8x icon-border"></i></a>
                   </div>
@@ -106,9 +112,12 @@
                     <a href="#" title="My Blog"><i class="icon-user icon-8x icon-border"></i></a>
                   </div>
                 </div>
+                <div class="span12" id="bottom">
+                  <a class="icon-chevron-down icon-4x tip" href="#" title="C.V." data-placement="top"></a>
+                </div>
             </div><!-- Left -->
 
-            <div id="right" class="right face">
+            <div id="right" class="right1 face">
                 <div class="row connect">
                   <div class="span6">
                     <h2>Running</h2>
@@ -117,8 +126,8 @@
                   <div class="span6">
                     <img src="img/connect/cats2.jpg" class="img-polaroid" />
                   </div>
-                </div>
-                <div class="row connect">
+                <!-- </div> -->
+                <!-- <div class="row connect"> -->
                   <div class="span6">
                     <img src="img/connect/cats3.jpg" class="img-polaroid" />
                   </div>
@@ -126,17 +135,27 @@
                     <h2>Solving Problems</h2>
                     <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                   </div>
-                </div>
-                <div class="row connect">
-                  <div class="span6">
+                <!-- </div> -->
+
+                <div class="span1" id="left">
+                  <a class="icon-chevron-left icon-4x tip" href="#portfolio" title="Connect" data-placement="right"></a>
+                </div> 
+
+                <!-- <div class="row connect"> -->
+                  <div class="span5">
                     <h2>Snowboarding</h2>
                     <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                   </div>
-                  <div class="span6">
+                  <div class="span5">
                     <img src="img/connect/cats6.jpg" class="img-polaroid" />
                   </div>
-                </div>
-                <div class="row connect">
+                <!-- </div> -->
+
+                <div class="span1" id="right">
+                    <a class="icon-chevron-right icon-4x tip" href="#about" title="About" data-placement="left"></a>
+                  </div> 
+
+                <!-- <div class="row connect"> -->
                   <div class="span6">
                     <img src="img/connect/cats4.jpg" class="img-polaroid" />
                   </div>
@@ -144,6 +163,9 @@
                     <h2>Drumming</h2>
                     <p class="lead int-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                   </div>
+                </div>
+                <div class="span12" id="bottom">
+                  <a class="icon-chevron-down icon-4x tip" href="#" title="C.V." data-placement="top"></a>
                 </div>
             </div><!-- Right -->
 
