@@ -64,13 +64,13 @@ body {
 }
 
 #cubeContainer.showPortfolio { -webkit-transform: translateZ(-100px) rotateY(0deg); }
-#cubeContainer.showPortfolioLeft { -webkit-transform: translateZ(-100px) rotateY(360deg); }
+/*#cubeContainer.showPortfolioLeft { -webkit-transform: translateZ(-100px) rotateY(360deg); }
 #cubeContainer.showPortfolioRight { -webkit-transform: translateZ(-100px) rotateY(-90deg); }
 
 #cubeContainer.showConnect { -webkit-transform: translateZ(-100px) rotateY(90deg); }
 #cubeContainer.showAbout { -webkit-transform: translateZ(-100px) rotateY(-90deg); }
 #cubeContainer.showAboutLeft { -webkit-transform: translateZ(-100px) rotateY(270deg); }
-#cubeContainer.showResume { -webkit-transform: translateZ(-100px) rotateX(90deg); }
+#cubeContainer.showResume { -webkit-transform: translateZ(-100px) rotateX(90deg); }*/
 
 
 /* HEADER STYLE 
