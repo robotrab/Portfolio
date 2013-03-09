@@ -25,9 +25,10 @@ $(function() {
   			targetDeg += 180;
   		}
   		else {
+  			targetBottom = 0;
   			targetDeg += 90;
   		}
-  		console.log(targetDeg);
+  		console.log('Left' + targetDeg);
   		$('.'+pageClass).css('-webkit-transform', 'rotateY('+targetDeg+'deg)');
 	});
 	$('.rightArrow').click(function() {
@@ -36,9 +37,10 @@ $(function() {
   			targetDeg -= 180;
   		}
   		else {
+  			targetBottom = 0;
   			targetDeg -= 90;
   		}
-  		console.log(targetDeg);
+  		console.log('Right' + targetDeg);
   		$('.'+pageClass).css('-webkit-transform', 'rotateY('+targetDeg+'deg)');
 	});
 	$('.bottomArrow').click(function() {
@@ -47,9 +49,10 @@ $(function() {
   			targetBottom += 270;
   		}
   		else {
+  			targetDeg = 0;
   			targetBottom += 90;
   		}
-  		console.log(targetBottom);
+  		console.log('Bottom' + targetBottom);
   		$('.'+pageClass).css('-webkit-transform', 'rotateX('+targetBottom+'deg)');
 	});
 });
