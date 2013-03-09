@@ -29,7 +29,12 @@ $(function() {
   			targetDeg += 90;
   		}
   		console.log('Left' + targetDeg);
-  		$('.'+pageClass).css('-webkit-transform', 'rotateY('+targetDeg+'deg)');
+  		$('.'+pageClass).css({
+  			'-webkit-transform': 'rotateY('+targetDeg+'deg)',
+  			'-moz-transform': 'rotateY('+targetDeg+'deg)',
+  			'-o-transform': 'rotateY('+targetDeg+'deg)',
+  			'transform': 'rotateY('+targetDeg+'deg)'
+  			});
 	});
 	$('.rightArrow').click(function() {
 		var pageClass = cubeContainer.attr('class');
@@ -41,7 +46,12 @@ $(function() {
   			targetDeg -= 90;
   		}
   		console.log('Right' + targetDeg);
-  		$('.'+pageClass).css('-webkit-transform', 'rotateY('+targetDeg+'deg)');
+  		$('.'+pageClass).css({
+  			'-webkit-transform': 'rotateY('+targetDeg+'deg)',
+  			'-moz-transform': 'rotateY('+targetDeg+'deg)',
+  			'-o-transform': 'rotateY('+targetDeg+'deg)',
+  			'transform': 'rotateY('+targetDeg+'deg)'
+  			});
 	});
 	$('.bottomArrow').click(function() {
 		var pageClass = cubeContainer.attr('class');
@@ -53,6 +63,11 @@ $(function() {
   			targetBottom += 90;
   		}
   		console.log('Bottom' + targetBottom);
-  		$('.'+pageClass).css('-webkit-transform', 'rotateX('+targetBottom+'deg)');
+  		$('.'+pageClass).css({
+  			'-webkit-transform': 'rotateX('+targetBottom+'deg)',
+  			'-moz-transform': 'rotateX('+targetBottom+'deg)',
+  			'-o-transform': 'rotateX('+targetBottom+'deg)',
+  			'transform': 'rotateX('+targetBottom+'deg)'
+  			});
 	});
 });
