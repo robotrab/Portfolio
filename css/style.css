@@ -3,21 +3,16 @@
     /* Padding below the footer and lighter body text */
 
 body {
-  /*padding-bottom: 40px;*/
   background: url('../img/bg.gif');
   margin: 0px;
-  -webkit-user-select: none;
 }
 
 /*.container {
   height: 100%;
 }*/
 
-.card {
+/*.card {
   position: absolute;
-  /*width: 1000px;*/
-  /*min-height: 80%;*/
-  /*height: 90%;*/
   -webkit-transform-style: preserve-3d;
   -webkit-transition-property: -webkit-transform;
   -webkit-transition-duration: 1.5s;
@@ -27,9 +22,6 @@ body {
 .face {
   position: absolute;
   display: block;
-  /*width: 1000px;*/
-  /*min-height: 80%;*/
-  /*height: 90%;*/
   -webkit-backface-visibility: hidden;
 }
 
@@ -80,7 +72,6 @@ body {
 }
 
 #card .right1 {
-  /*height: 1000px;*/
   -webkit-transform: rotateY( 90deg ) translateZ( 200px );
   -moz-transform: rotateY( 90deg ) translateZ( 200px );
   -o-transform: rotateY( 90deg ) translateZ( 200px );
@@ -136,7 +127,7 @@ body {
   -moz-transform: translateZ( -200px ) rotateY(  90deg );
   -o-transform: translateZ( -200px ) rotateY(  90deg );
   transform: translateZ( -200px ) rotateY(  90deg );
-}
+}*/
 
 /* HEADER STYLE 
 ----------------------------------------------------- */
@@ -155,47 +146,34 @@ body {
 
 /* Nav 
 -------------------------------------------------------*/
-/*nav {
-  position: relative;
+
+.navbar .navbar-inner {
+  padding: 0;
 }
-*/
-
-/*.leftArrow {
-  position: fixed;
-  left: 0%;
-  top: 50%;
+.navbar .nav {
+  margin: 0;
+  display: table;
+  width: 100%;
 }
-
-.rightArrow {
-  position: fixed;
-  right: 0%;
-  top: 50%;
-}*/
-/*#left {
-  margin-top: auto;
+.navbar .nav li {
+  display: table-cell;
+  width: 1%;
+  float: none;
 }
-
-.vcenter {
-  position: absolute;
-  top: 50%;
-}*/
-
-#right {
-  text-align: right;
-}
-
-#bottom {
+.navbar .nav li a {
+  font-weight: bold;
   text-align: center;
-  margin: auto;
+  border-left: 1px solid rgba(255,255,255,.75);
+  border-right: 1px solid rgba(0,0,0,.1);
 }
-
-/*#top {
-  left: 50%;
-  right: 50%;
-  top: 0%;
+.navbar .nav li:first-child a {
+  border-left: 0;
+  border-radius: 3px 0 0 3px;
 }
-*/
-
+.navbar .nav li:last-child a {
+  border-right: 0;
+  border-radius: 0 3px 3px 0;
+}
 
 /* LINKS AND TRANSITIONS
 -----------------------------------------------------*/
@@ -255,33 +233,7 @@ a:hover {
 
 
 
-.navbar .navbar-inner {
-        padding: 0;
-      }
-      .navbar .nav {
-        margin: 0;
-        display: table;
-        width: 100%;
-      }
-      .navbar .nav li {
-        display: table-cell;
-        width: 1%;
-        float: none;
-      }
-      .navbar .nav li a {
-        font-weight: bold;
-        text-align: center;
-        border-left: 1px solid rgba(255,255,255,.75);
-        border-right: 1px solid rgba(0,0,0,.1);
-      }
-      .navbar .nav li:first-child a {
-        border-left: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      .navbar .nav li:last-child a {
-        border-right: 0;
-        border-radius: 0 3px 3px 0;
-      }
+
 
 
 
