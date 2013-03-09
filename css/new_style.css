@@ -3,9 +3,75 @@
     /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
+  /*padding-bottom: 40px;*/
   background: url('../img/bg.gif');
 }
+
+#cubeSection {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  -webkit-perspective: 5000;
+
+}
+
+#cubeContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+}
+
+.cubeFace {
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  /*top: 0%;
+  left: 0%;*/
+  overflow-y: hidden;
+  -webkit-transform: translateZ(-100px);
+  display: block;
+  -webkit-backface-visibility: hidden;
+}
+
+#portfolioPage {
+  -webkit-transform: rotateY( 0deg ) translateZ(100px);
+  -moz-transform: rotateY( 0deg ) translateZ(100px);
+  -o-transform: rotateY( 0deg ) translateZ(100px);
+  transform: rotateY( 0deg ) translateZ(100px);
+}
+
+#connectPage {
+  -webkit-transform: rotateY( -90deg ) translateZ(100px);
+  -moz-transform: rotateY( -90deg ) translateZ(100px);
+  -o-transform: rotateY( -90deg ) translateZ(100px);
+  transform: rotateY( -90deg ) translateZ(100px);
+}
+
+#aboutPage {
+  -webkit-transform: rotateY( 90deg ) translateZ(100px);
+  -moz-transform: rotateY( 90deg ) translateZ(100px);
+  -o-transform: rotateY( 90deg ) translateZ(100px);
+  transform: rotateY( 90deg ) translateZ(100px);
+}
+
+#resumePage {
+  -webkit-transform: rotateX( -90deg ) translateZ(100px);
+  -moz-transform: rotateX( -90deg ) translateZ(100px);
+  -o-transform: rotateX( -90deg ) translateZ(100px);
+  transform: rotateX( -90deg ) translateZ(100px);
+}
+
+#cubeContainer.showPortfolio { -webkit-transform: translateZ(-100px) rotateY(0deg); }
+#cubeContainer.showPortfolioLeft { -webkit-transform: translateZ(-100px) rotateY(360deg); }
+#cubeContainer.showPortfolioRight { -webkit-transform: translateZ(-100px) rotateY(-90deg); }
+
+#cubeContainer.showConnect { -webkit-transform: translateZ(-100px) rotateY(90deg); }
+#cubeContainer.showAbout { -webkit-transform: translateZ(-100px) rotateY(-90deg); }
+#cubeContainer.showAboutLeft { -webkit-transform: translateZ(-100px) rotateY(270deg); }
+#cubeContainer.showResume { -webkit-transform: translateZ(-100px) rotateX(90deg); }
+
 
 /* HEADER STYLE 
 ----------------------------------------------------- */
