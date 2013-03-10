@@ -18,6 +18,8 @@ $(function() {
 	}
 
 	var cubeContainer = $('#cubeContainer');
+  var cubeSection = $('#cubeSection');
+  var cubeFace = $('.cubeFace');
 
 	$('.leftArrow').click(function() {
   		var pageClass = cubeContainer.attr('class');
@@ -34,6 +36,18 @@ $(function() {
   			'-o-transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)',
   			'transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)'
   			});
+      if(targetDeg == 90 || targetDeg%360 == 90 || targetDeg%360 == -270) {
+        cubeSection.css('height', '600px');
+        cubeFace.css('height', '600px');
+      }
+      else if(targetDeg%360 == 270) {
+        cubeSection.css('height', '1000px');
+        cubeFace.css('height', '1000px');
+      }
+      else if(targetDeg%360 == 0) {
+        cubeSection.css('height', '600px');
+        cubeFace.css('height', '600px');
+      }
 	});
 	$('.rightArrow').click(function() {
 		var pageClass = cubeContainer.attr('class');
@@ -50,6 +64,18 @@ $(function() {
   			'-o-transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)',
   			'transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)'
   			});
+      if(targetDeg == -90 || targetDeg%360 == -90 || targetDeg%360 == 270) {
+        cubeSection.css('height', '1000px');
+        cubeFace.css('height', '1000px');
+      }
+      else if(targetDeg%360 == -270) {
+        cubeSection.css('height', '600px');
+        cubeFace.css('height', '600px');
+      }
+      else if(targetDeg%360 == 0) {
+        cubeSection.css('height', '600px');
+        cubeFace.css('height', '600px');
+      }
 	});
 	$('.bottomArrow').click(function() {
 		var pageClass = cubeContainer.attr('class');
@@ -66,5 +92,13 @@ $(function() {
   			'-o-transform': 'translateZ(-100px) rotateX('+targetBottom+'deg)',
   			'transform': 'translateZ(-100px) rotateX('+targetBottom+'deg)'
   			});
+      if(targetBottom == 90 || targetBottom%360 == 90 || targetBottom%360 == -270) {
+        cubeSection.css('height', '1200px');
+        cubeFace.css('height', '1200px');
+      }
+      else {
+        cubeSection.css('height', '600px');
+        cubeFace.css('height', '600px');
+      }
 	});
 });
