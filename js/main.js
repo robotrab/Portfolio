@@ -30,10 +30,10 @@ $(function() {
   		}
   		console.log('Left' + targetDeg);
   		$('.'+pageClass).css({
-  			'-webkit-transform': 'rotateY('+targetDeg+'deg)',
-  			'-moz-transform': 'rotateY('+targetDeg+'deg)',
-  			'-o-transform': 'rotateY('+targetDeg+'deg)',
-  			'transform': 'rotateY('+targetDeg+'deg)'
+  			'-webkit-transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)',
+  			'-moz-transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)',
+  			'-o-transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)',
+  			'transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)'
   			});
 	});
 	$('.rightArrow').click(function() {
@@ -47,10 +47,10 @@ $(function() {
   		}
   		console.log('Right' + targetDeg);
   		$('.'+pageClass).css({
-  			'-webkit-transform': 'rotateY('+targetDeg+'deg)',
-  			'-moz-transform': 'rotateY('+targetDeg+'deg)',
-  			'-o-transform': 'rotateY('+targetDeg+'deg)',
-  			'transform': 'rotateY('+targetDeg+'deg)'
+  			'-webkit-transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)',
+  			'-moz-transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)',
+  			'-o-transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)',
+  			'transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)'
   			});
 	});
 	$('.bottomArrow').click(function() {
@@ -64,10 +64,10 @@ $(function() {
   		}
   		console.log('Bottom' + targetBottom);
   		$('.'+pageClass).css({
-  			'-webkit-transform': 'rotateX('+targetBottom+'deg)',
-  			'-moz-transform': 'rotateX('+targetBottom+'deg)',
-  			'-o-transform': 'rotateX('+targetBottom+'deg)',
-  			'transform': 'rotateX('+targetBottom+'deg)'
+  			'-webkit-transform': 'translateZ(-100px) rotateX('+targetBottom+'deg)',
+  			'-moz-transform': 'translateZ(-100px) rotateX('+targetBottom+'deg)',
+  			'-o-transform': 'translateZ(-100px) rotateX('+targetBottom+'deg)',
+  			'transform': 'translateZ(-100px) rotateX('+targetBottom+'deg)'
   			});
 	});
 });
