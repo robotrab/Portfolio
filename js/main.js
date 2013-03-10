@@ -28,7 +28,6 @@ $(function() {
   			targetBottom = 0;
   			targetDeg += 90;
   		}
-  		console.log('Left' + targetDeg);
   		$('.'+pageClass).css({
   			'-webkit-transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)',
   			'-moz-transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)',
@@ -45,7 +44,6 @@ $(function() {
   			targetBottom = 0;
   			targetDeg -= 90;
   		}
-  		console.log('Right' + targetDeg);
   		$('.'+pageClass).css({
   			'-webkit-transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)',
   			'-moz-transform': 'translateZ(-100px) rotateY('+targetDeg+'deg)',
@@ -62,7 +60,6 @@ $(function() {
   			targetDeg = 0;
   			targetBottom += 90;
   		}
-  		console.log('Bottom' + targetBottom);
   		$('.'+pageClass).css({
   			'-webkit-transform': 'translateZ(-100px) rotateX('+targetBottom+'deg)',
   			'-moz-transform': 'translateZ(-100px) rotateX('+targetBottom+'deg)',
