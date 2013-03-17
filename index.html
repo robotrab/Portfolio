@@ -10,10 +10,10 @@
         <link href="css/lib/font-awesome.min.css" rel="stylesheet">
         <link href="css/carousel-extras.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <script src="js/lib/modernizr.custom.80105.js"></script>
+        <script src="js/lib/modernizr.custom.94225.js"></script>
         <script>
         Modernizr.load({
-          test: Modernizr.csstransforms3d,
+          test: Modernizr.csstransforms3d || Modernizr.mq('only all and (min-width: 979px)'),
           nope: 'js/redirect.js'
         });
         </script>

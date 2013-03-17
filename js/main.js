@@ -40,7 +40,7 @@ $(function() {
         cubeSection.css('height', '600px');
         cubeFace.css('height', '600px');
       }
-      else if(targetDeg%360 == 270) {
+      else if(targetDeg == -90 || targetDeg%360 == 270) {
         cubeSection.css('height', '1000px');
         cubeFace.css('height', '1000px');
       }
@@ -68,7 +68,7 @@ $(function() {
         cubeSection.css('height', '1000px');
         cubeFace.css('height', '1000px');
       }
-      else if(targetDeg%360 == -270) {
+      else if(targetDeg == 90 || targetDeg%360 == -270) {
         cubeSection.css('height', '600px');
         cubeFace.css('height', '600px');
       }
