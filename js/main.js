@@ -93,8 +93,8 @@ $(function() {
   			'transform': 'translateZ(-100px) rotateX('+targetBottom+'deg)'
   			});
       if(targetBottom == 90 || targetBottom%360 == 90 || targetBottom%360 == -270) {
-        cubeSection.css('height', '1200px');
-        cubeFace.css('height', '1200px');
+        cubeSection.css('height', '1700px');
+        cubeFace.css('height', '1700px');
       }
       else {
         cubeSection.css('height', '600px');
